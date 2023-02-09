@@ -1,0 +1,325 @@
+/* Variables */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+:root {
+    --black: #000000;
+    --light-green: #00ed82;
+    --lighter-black: #0b0c0f;
+    --light-1-grey: #6e7a91;
+    --light-2-grey: #a8afbd;
+    --light-3-grey: #b8becc;
+    --light-4-grey: #bec0c2;
+    --darker-grey: #16181d;
+    --blue: #176ee1;
+    --ff: 'Rubik', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1180px;
+}
+
+.main-header {
+    width: 100vw;
+    height: 700px;
+    background-color: black;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.2)), url(./assets/main-top-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-hulu {
+    height: 22px;
+}
+
+.logo-nav-btn {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.btn-log-in a {
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.btn-log-in a:hover {
+    background-color: var(--light-4-grey);
+    color: black;
+    border-radius: 7px;
+    transition: 0.2s ease-out;
+}
+
+.sentence h5 {
+    color: var(--light-green);
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.logos-line-3 img {
+    height: 135px;
+
+}
+
+.logos-line-3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.slogan h4 {
+    max-width: 700px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+}
+
+.slogan {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.btn-main {
+    justify-content: center;
+}
+
+.btn-main a {
+    padding: 10px 60px;
+    background-color: #00ed82;
+    color: #000000;
+    font-family: 'Rubik', sans-serif;
+    font-size: larger;
+    text-align: center;
+    width: 700px;
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+.btn-main a:hover {
+    opacity: 60%;
+    color: white;
+    transition: 0.2s ease-out;
+}
+
+.small-links {
+    margin-block: 20px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small {
+    font-size: small;
+    text-decoration: underline;
+    color: var(--light-1-grey);
+    font-family: 'Rubik', sans-serif;
+    margin-block: 20px;
+}
+
+.big {
+    text-decoration: underline;
+    color: white;
+    font-size: larger;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+
+.all-tv-love {
+    height: 1350px;
+    width: 100vw;
+    background-color: var(--lighter-black);
+    /* flex-direction: row; */
+    padding: 50px;
+    /* justify-content:center; */
+}
+
+.text {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.text h5 {
+    color: #00ed82;
+    padding: 20px;
+    font-family: var(--ff);
+    text-align: center;
+}
+
+.text h3 {
+    color: white;
+    padding: 20px;
+    font-size: 50px;
+    font-family: var(--ff);
+    text-align: center;
+}
+
+.text p {
+    color: var(--light-2-grey);
+    font-family: var(--ff);
+    padding: 20px;
+    text-align: center;
+    max-width: 1000px;
+    font-size: larger;
+}
+
+.images-section {
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.images-section img {
+    width: 300px;
+}
+
+.text a {
+    font-family: var(--ff);
+    font-weight: 600;
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 100px;
+}
+
+.live-sports {
+    width: 100vw;
+    height: 835px;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.2)), url(./assets/dallas-state-img.jpg);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.links {
+    /* border: 2px solid red; */
+    min-width: 1500px;
+    margin-inline: auto;
+    /* padding: auto */
+    padding-left: 40px;
+    justify-content: flex-start;
+    font-family: var(--ff);
+}
+
+.links a {
+    font-weight: 600;
+    color: white;
+    /* padding: 40px; */
+    padding-right: 30px;
+}
+
+.links a:hover {
+    color: #6e7a91;
+    transition: 0.2s ease-out;
+}
+
+
+.text-etc {
+    /* border: 2px solid red; */
+    flex-direction: column;
+    min-width: 1500px;
+    margin-inline: auto;
+    padding: auto;
+    justify-content: flex-start;
+    font-family: var(--ff);
+}
+
+.text-etc h2 {
+    font-size: 45px;
+    padding-left: 40px;
+    padding-top: 40px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.text-etc p {
+    font-size: larger;
+    padding-left: 40px;
+    padding-right: 100px;
+    width: 700px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.logos-4 {
+    /* border: 2px solid red; */
+    min-width: 1500px;
+    margin-inline: auto;
+    justify-content: flex-start;
+    padding-left: 40px;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.texxt {
+    /* border: 2px solid red; */
+    min-width: 1500px;
+    margin-inline: auto;
+    justify-content: flex-start;
+    padding-left: 40px;
+    gap: 30px;
+    font-family: var(--ff);
+    font-size: smaller;
+    color: var(--light-3-grey);
+}
+
+.texxt a {
+    text-decoration: underline;
+    color: var(--light-3-grey);
+    font-family: var(--ff);
+}
+
+.select-ur-plan {
+    background-color: #000000f4;
+    width: 100vw;
+    height: 900px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-block: 60px;
+}
+
+.select-ur-plan h2 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--ff);
+    color: #fff;
+    padding-block: 30px;
+}
+
+.select-ur-plan p {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: var(--ff);
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.line {
+    max-width: 1180px;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.4);
+    height: 0.1px;
+    margin-block: 30px;
+}
